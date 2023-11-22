@@ -1,0 +1,273 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="OpeningAccount" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="SystemException" Type="OutArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>727.2,3500</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>OpeningAccount_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="70">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="OpeningAccount" sap:VirtualizedContainerService.HintSize="737.6,3435.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="696,3342.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: SOA Bank" sap:VirtualizedContainerService.HintSize="659.2,3111.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,2854.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to Open New Account" sap:VirtualizedContainerService.HintSize="584,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="398, 441, 45, 24" ElementType="Text" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' type='' check:text='Open' /&gt;" Guid="d93b24a0-2f63-4d81-96b7-f3937bbd530c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAcCAYAAADIrlf0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM3SURBVFhH7Za/S+NgGMf9Ezp2dXTs6Nrxxhv7D4gIBQmF4+pyUES4IoKKS3GRdhC6HOemt4gOcrTDQTgQNK1N02pN/dG0WGm/97zJk+ZH7fW4Hl6QfiDD++RJ8n7e93mSzOANMJUIClOJoDCVCApTiaAwWsJo4+hLHUs7VT7q2Cq20enx+QDxgkQfha8VRBYvMbOoIJK4QmyjgqikILRwiZCkIqv1OTcYDEk0z6qYo8nOrd9C7nKQ6ai3iC2T3HIVBwYHA4BPooVUQkxSw9GospFrmCfJ6H6bAySu3CN7ZqCJHjRZR3qXyi93g4OfT5zhZ3zeBZ0/OBer2INcvP1trleifI0oTTCy1+LAS7SRXiHRlWvIHJH3y5iRqkhulxCOixIsISJ2jO41n7knORc9A+lPdqlSXkJBWDxz+86Tl9+knLUaUpQb8t8z98hZFl6Jk6qZtHTC4xGYD1ioIs9jU4Kum93QoQ12sIdCTsQVSEW7h/o43SuRQBlpxemr5rGKWbo+9u2ZI/YzaMdzLXQ4BnSR31AoXkHWVc4eCWsyZaQUDozAzkur7nEJSXtrbAzqISGXeeDAA6S4e2zTQlKiSdMi2FgS3smamAtNzy7zmPBINA8rlCBWjgMjOMqI1VCR51W3JJyxA5deqgFNDLlcZ1dU16tbHCqiJOcuUVPi4zUKPB4wTgJFzdrWQ2dbh3lG9jM9IE7NzxFLwikvB1//sMT8qlvAdeTuLFnClHBJDRgrYeiI0fchtK57m9GNnbN5x4Hh8nLwlUmjgfeizl1vtlH8vQQ1nlUqCjW37yNh0sPpLjWmWf9OY1oS3sY0GXod8yucJlcY8+WfQIIwHpD8QDdYLCGW03GqPkFrPEGm93ZqrWR+taP73m6zJUJSBelix8zXLnQsifvEqVfuOZFo0iTMj+lqHfkL695aw6BfnBq2fnASMZmEoNtGducKc+LXgx5oH+FEBclj54VnY/dE5nsNUdc14YSKrXP/kvehndXxTpSZ696hOE3snFOIySUG9NHRrdVqvlRdjLex+ZrHMfVCdB55J4zJ/sXGSPwZXonXZyph8yYkYIja7rr+cV6XfyPxXwF+AfbeOlfHr0L7AAAAAElFTkSuQmCC" InformativeScreenshot="59a4f7a8edbe9d15b7ca0be2f263232b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector, Image">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="385, 427, 72, 51" ElementType="Button" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' type='button' check:text='Open' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAA3CAYAAACmcqwpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQaSURBVHhe7ZvPaxtXEMf9J+joq48++uirjjn2qH8gGIMgCEGofCmIEKgIhjjkYnJJpYNBh4a6NBD3YmKKKdahIAoGZ6VotbIrS/61EnaQvp3Zfat9K0vYr8hFwvOBPbzZ2ZX2ozezbwU7B8EIEWaICDMkIqzWOMHH3T+Q//ARP/3826Pe2AG7YCc6A2G8Y+vXHVTrDfT7fRV9vLADdsFOdGkDYWyTE4Qo7ITdBAyE8RSUmXUbdsJuAgbCuG6F0ehuRNg9EGGGiDBDRJghIswQEWaICDNEhBkiwgwRYYaIMENEmCEizBARZogIM+ThhLkd7Hw4xurbutqOsVHqoNtT+2eUBxDWx8EvNSytfMHcioWl9Fck1muIpyzEnn5BLGUj78zuv7kTF9ber2ORxCy+OkX5RgUVXfsUiWck8lkd264KzhgTFnaFbJqFONgZV3rlBpZJaHyrowIk2TpHft9FGz045RZy76iEC/9g++9rlTHM3XlHtH/7kH+xHsql03uc835MVlj1BHGSsfT+SgVG0UFujaSunaCsIuWtKuZSdWTeVDCf5DKuYIlnIp1refOcRGr0XOR+CMqd8tIW5vkz35xF8oqvKedlA1nKjQ2fs3CpssyZrLDPde8LrX5W4zF4F/O0jqIae8LouIX1FpzBzOzhoMBxC6lS0PP62HtfIVlV5KywD7Z3bSzQ8Ynfv6lI8Bk0kwtX6KoYcIPiukXxGvL/sSVMVJh/4VVkLRUYQ5CXs/VxBZlgygW41PNY5OaFClwgldTHAVfIpEgQCQ/whY0Q4/2o9NlVNTZkosLan2r0ZXhGqMAYdjb5V7ZRVLPJFxaOQ1T5ZptweKhKfmHN1pYrvNmIk0i9zD1h35/gQI0HTJMwlBy/ND6FpXGbb8j/SBeTpBuDivjCwhINGep3StjyC12WthXOfLGEJ0wTOGCqhLktJGj9FXvVijZqnSDn9ZkK3C7RkKFSazbxHfcl7Q47jtkQRk3ZLzeLGv/QIsyjh7131LS9fhU2bV9YtGl73FqCqGULiTi444lhRoQR7gUyz+nLrlSQKLSwZ1/DaV6jTOui7MuKt9qPb0U7cSAslqohV+p6+c5RC6t8niT1tnOVSLTpgr2F8YtjFI/8cztNlx7DGtj4SyURsyOMuekg//YrFvnxiC4u2ObTNWR2w5t8QNDDNv9sIK4dM5+2sXE4PJX6cPaP8YRLVTt3LEkSDlUKMVvCBvTRbfmzoD2qQhXRpq+Oubyj5ojupZph7v/3bPrAwu5HVNh0I8IMEWGGTIUwuNyLbrRnvullOoTNECLMEBFmiAgzRIQZIsIMEWGGiDBDRJghI4XJu0ajGfuukbzNNpqxb7PJ+5JR2AG7GPu+JMM72CZPQa7bx7yxA3ahy2IiwoS7AP4F/KoS9Hv1EkkAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="584,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reading Excel File&quot;]" />
+                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="584,2429.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                  <ueab:ExcelProcessScopeX.Body>
+                    <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,2343.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="508.8,2250.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="Account.xlsx">
+                          <ueab:ExcelApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1980.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,1690.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                                  <ueab:ExcelForEachRowX.Body>
+                                    <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                      <ActivityAction.Argument1>
+                                        <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                      </ActivityAction.Argument1>
+                                      <ActivityAction.Argument2>
+                                        <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                      </ActivityAction.Argument2>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1497.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Writing Excel Acocunt details into Webpage&quot;]" />
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Name&quot;).ToString]" Version="V3">
+                                          <uix:NTypeInto.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="221, 526, 415, 44" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID6c7b3eede457437…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;mat-form-field&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-24 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="402e9a30-5e8d-4f5f-a06d-d5e92f1f5943" InformativeScreenshot="f15d8e7e637c8c87fdbb1fbf036a70d9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="220, 491, 85, 24" ElementType="Text" FriendlyName="'Full Name'" FullSelectorArgument="&lt;webctrl aaname=' Full Name ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Full Name ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Full Name' /&gt;" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NTypeInto.Target>
+                                        </uix:NTypeInto>
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Email" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V3">
+                                          <uix:NTypeInto.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="653, 536, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID6c344ee84b6e439…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-23 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="e22f8182-6369-4534-8fe4-9daac1bc4967" InformativeScreenshot="10b8a2a534b31208784893e7fe9ff17d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="652, 491, 118, 24" ElementType="Text" FriendlyName="'Email Address'" FullSelectorArgument="&lt;webctrl aaname=' Email Address ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Email Address ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Email Address' /&gt;" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NTypeInto.Target>
+                                        </uix:NTypeInto>
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Account Type" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;AccountType&quot;).ToString]" Version="V3">
+                                          <uix:NTypeInto.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="189, 833, 243, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;ng-select&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='' tag='INPUT' type='text' aaname='' /&gt;" Guid="eac0f7c6-34a5-4482-a6e5-8971cb165d97" InformativeScreenshot="b63a28bc1b2f24dd64b9fe4c412596f0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="175, 788, 113, 24" ElementType="Text" FriendlyName="'Account Type'" FullSelectorArgument="&lt;webctrl aaname=' Account Type ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Account Type ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Account Type' /&gt;" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NTypeInto.Target>
+                                        </uix:NTypeInto>
+                                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="333.6,238.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                          <uix:NMouseScroll.SearchedElement>
+                                            <uix:SearchedElement>
+                                              <uix:SearchedElement.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="176, 864, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID5e70029fa5e64fa…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-21 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="ce362718-eed4-44b2-a750-568476b3c332" InformativeScreenshot="dbdef2cbf2dc49c4fd36cbdcfabb083d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="175, 819, 162, 24" ElementType="Text" FriendlyName="'Deposit Amount ($)'" FullSelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Deposit Amount ($)' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:SearchedElement.Target>
+                                              <uix:SearchedElement.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:SearchedElement.Timeout>
+                                            </uix:SearchedElement>
+                                          </uix:NMouseScroll.SearchedElement>
+                                        </uix:NMouseScroll>
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Deposit" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Deposit&quot;).ToString]" Version="V3">
+                                          <uix:NTypeInto.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="176, 864, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID5e70029fa5e64fa…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-21 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="55fc1074-101a-441b-ad6a-8aa7941d95af" InformativeScreenshot="a83fca8b58e5fd13517bd48092935dfb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="175, 819, 162, 24" ElementType="Text" FriendlyName="'Deposit Amount ($)'" FullSelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Deposit Amount ($)' /&gt;" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NTypeInto.Target>
+                                        </uix:NTypeInto>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ueab:ExcelForEachRowX.Body>
+                                </ueab:ExcelForEachRowX>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to open account" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="309, 963, 120, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' type='button' class='mat-focus-indicator mat-button mat-button-base' check:innerText='Open' /&gt;" Guid="2bcdcb36-8521-412a-95ad-10edb986233d" InformativeScreenshot="e3481791f759d57454be1e3c3bee01e8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="346, 975, 45, 24" ElementType="Text" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' type='' class='' check:innerText='Open' /&gt;" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelApplicationCard.Body>
+                        </ueab:ExcelApplicationCard>
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelProcessScopeX.Body>
+                </ueab:ExcelProcessScopeX>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="472, 56, 1235, 1020" BrowserType="Edge" IconBase64="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" InformativeScreenshot="6e798ed82890746919f763bb82e3c3ac.png" Selector="&lt;html app='msedge.exe' title='SOA Bank'/&gt;" Title="SOA Bank" Url="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="662.4,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="SystemException" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
