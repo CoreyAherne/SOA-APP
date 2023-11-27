@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>946.4,3565.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>946.4,4362.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ApplyforLoan_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
@@ -87,24 +87,26 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ApplyforLoan" sap:VirtualizedContainerService.HintSize="956.8,3500.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ApplyforLoan" sap:VirtualizedContainerService.HintSize="956.8,4297.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="915.2,3408" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="915.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Attaching app via browser&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="915.2,4072" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: SOA Bank" sap:VirtualizedContainerService.HintSize="878.4,3176.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c5c09f2a-6f7f-4a85-bc77-8b4deff6022d" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: SOA Bank" sap:VirtualizedContainerService.HintSize="878.4,3840.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c5c09f2a-6f7f-4a85-bc77-8b4deff6022d" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="844.8,2960" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="844.8,3624" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="sFullString" />
                   <Variable x:TypeArguments="s:String[]" Name="sSplit" />
@@ -115,6 +117,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="803.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Getting account number&quot;]" />
                 <uix:NGetText DisplayName="Get Account Number" sap:VirtualizedContainerService.HintSize="803.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c5c09f2a-6f7f-4a85-bc77-8b4deff6022d" TextString="[sFullString]" Version="V3">
                   <uix:NGetText.Target>
                     <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" CvTextArea="191, 370, 191, 17" CvType="AnyWordGroup" DesignTimeRectangle="195, 366, 189, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account Number: 9434'" FullSelectorArgument="&lt;webctrl aaname='Account Number: 9434' class='label-area' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='label-area' tag='SPAN' type='' /&gt;" Guid="cbc9d33b-a000-40c1-a14c-74edf4f931a5" ImageBase64="" InformativeScreenshot="b694d03f56849889c521ef6dce62ed87.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
@@ -142,6 +145,7 @@
                     <InArgument x:TypeArguments="x:String">[sSplit(1)]</InArgument>
                   </Assign.Value>
                 </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="803.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Saving account number to Excel&quot;]" />
                 <ui:WriteCell Cell="E2" DisplayName="Write account Number to Excel" sap:VirtualizedContainerService.HintSize="803.2,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[sAccountNumber]" WorkbookPath="Account.xlsx" />
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click apply for Loan" sap:VirtualizedContainerService.HintSize="803.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c5c09f2a-6f7f-4a85-bc77-8b4deff6022d" Version="V3">
                   <uix:NClick.Target>
@@ -154,6 +158,7 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="803.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Applying for loan&quot;]" />
                 <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Account Number" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="803.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="c5c09f2a-6f7f-4a85-bc77-8b4deff6022d" Text="[sAccountNumber]" Version="V3">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" CvElementArea="187, 334, 344, 44" CvType="InputBox" DesignTimeRectangle="190, 336, 338, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT IDf333789f641a49d…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-39 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="585c103d-d24e-4ecf-b443-fcf5a5ea6151" InformativeScreenshot="d016ff0a63f8d408d21a64b424066fdb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
@@ -165,18 +170,19 @@
                     </uix:TargetAnchorable>
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope for Entering Loan amount" sap:VirtualizedContainerService.HintSize="803.2,1305.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope for Entering Loan amount" sap:VirtualizedContainerService.HintSize="803.2,1571.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
                   <ueab:ExcelProcessScopeX.Body>
                     <ActivityAction x:TypeArguments="ui:IExcelProcess">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,1219.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,1484.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Getting Loan amount from Excel&quot;]" />
                         <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="508.8,1126.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="Account.xlsx">
                           <ueab:ExcelApplicationCard.Body>
                             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
@@ -208,7 +214,7 @@
                                           <uix:NTypeInto.Target>
                                             <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB" CvElementArea="147, 528, 323, 43" CvType="InputBox" DesignTimeRectangle="150, 530, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT IDee37a7e6806b49d…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;mat-form-field&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-22 cdk-text-field-autofill-monitored' tag='INPUT' type='number' aaname='' /&gt;" Guid="4c41e277-037a-4f59-aeff-94eb03b885be" InformativeScreenshot="173e08f83f15544f9e898a312e0769d3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                   <uix:Target CvTextArea="148, 488, 290, 18" CvTextArgument="How much do you want to borrow?" CvType="Text" DesignTimeRectangle="149, 485, 290, 24" ElementType="Text" FriendlyName="'How much'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;control-label&amp;gt;div&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='SPAN' class='control-label lable-top' aaname=' How much do you want to borrow? ' check:innerText='How much do you want to borrow?' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
                                                 </scg:List>
                                               </uix:TargetAnchorable.Anchors>
@@ -219,7 +225,7 @@
                                           <uix:NClick.Target>
                                             <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB" CvElementArea="187, 607, 169, 54" CvTextArea="245, 626, 51, 21" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="189, 609, 165, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Apply'" FullSelectorArgument="&lt;webctrl aaname='Apply' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply' tag='BUTTON' type='button' class='mat-focus-indicator mat-button mat-button-base' check:innerText='Apply' /&gt;" Guid="d0fd4bfb-9733-43a7-ac64-058909a5dcf3" InformativeScreenshot="8b578dbfbc26b03d77947a683754705f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                   <uix:Target CvElementArea="187, 607, 169, 54" CvTextArea="245, 626, 51, 21" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="248, 622, 46, 24" ElementType="Text" FriendlyName="'Apply'" FullSelectorArgument="&lt;webctrl aaname='Apply' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply' tag='SPAN' type='' class='' check:innerText='Apply' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAcCAYAAAAjmez3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAObSURBVFhH3Ze/SyNBFMf9M/wXLC1tLS2vtLW4wjJNwEIOgs1dIRixkQOL2NmIhwgqwnEichhECIKQhGCyUWN+mV+uxu+9mXm7mZ0dQzjUY2/gA+533r55b+a92Tg29jmH/wKrGEWsYhSxilHEKkYRqxhFrGIUsYpRxCr+S+JFTK+UMbVomRuGVZQUEDvp4fiigU/W+XfiexsOgLM9y9wwrKJgqYkMOQT6+LFpmX8v3jqRmZMnwHWRqQLdq6rV5l1420RukKIEkG9gLv1MCfWQiJs2ZcQOm4it5jCeuMPCaQfH2S62flYxa9b30h0Sh3XMLeUwsXqPZLpLth2kdiuYNv3qiXy5xQKtkdgsBW0kav3k9i0mxHPYgNjsoIYXHO8UMLbWko4zR0XDroEz0rOXHTh9OrV2H7X2C7qkwX1CaoPe9WxlcOQv84hun2zYVo4H2qSvmt/AifCGVlvhPpUx0vonZfUcmGQWrmgR/xTYWaWFmYCdSgR4ph669vXx5SbOXGXvL87BwX1EcnmQ4AQFI3RRuuOGrVdak0fCWbhPYxmxES6SdMpS0ycl8TqO6d1u5t7XlLNnpNZ0W07EaWLS1xRqETqVFdY4ON2nooikmKBNW/A0IxE/nkCfVqUmSt/fgMGkQgVNZbBbxgzd55KNFrKk1i4qmq1KpHZ+p2nM3qPysc3PXnD7Wrkxs6IHLUkPmr2ARFavEDr1nR6VMJc++zESKSNVIS+vDX3nOBEnfau9z8hEtGBCwQ1QiTxj6ztrNlvuB9WnnFivi5g3L/D/EHBjO+nK4DQ89s1d4NLK1wfvM35db7DGwTm/w0mrMnzEN+/2sibNfVqkMo5zJQSqg9Af5i/o+tEbSIdrVTqTGifS7mA+YFtSdW8JbvAuE7/HQZv0RhuznvbK6anNcbF+JE7b7Fdi8GBpIAOVqFfPnAiNWr6JOXlydO+nn+QV7FDvmDeR6Jtsmr4z0vYOybzw90K9o30nXknEb3qXTtB2HXt/WBvIhBdxTm/omXvkvIGUI8rDGy9wLuvBD50X3K86Dh6UlRz9PjKnFfVBM20t/SQ/CzTC3zQiJIwMJ+I1+2KJdtmhGjbtCCO48YRDtqVgAiMwtPRDwsgYiQxjyC6PjFda2bq99EPCyHxEIteYTBTkb7n1oigr7Zo2sYoj8RGJqDXUoEthz/bjkbGKI3GNKbp9pmnH7PMaf/tfH338JpfFDfdK7+lYxciRwx+dhPHss+yjDQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
                                                 </scg:List>
                                               </uix:TargetAnchorable.Anchors>
@@ -235,11 +241,12 @@
                             </ActivityAction>
                           </ueab:ExcelApplicationCard.Body>
                         </ueab:ExcelApplicationCard>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Checking for pop up if successful&quot;]" />
                       </Sequence>
                     </ActivityAction>
                   </ueab:ExcelProcessScopeX.Body>
                 </ueab:ExcelProcessScopeX>
-                <uix:NCheckState DisplayName="Check App State 'insert_chartSOA BANK'" sap:VirtualizedContainerService.HintSize="803.2,507.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c5c09f2a-6f7f-4a85-bc77-8b4deff6022d" Version="V3">
+                <uix:NCheckState DisplayName="Checking if successful" sap:VirtualizedContainerService.HintSize="803.2,507.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c5c09f2a-6f7f-4a85-bc77-8b4deff6022d" Version="V3">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="375.2,187.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
                       <sap:WorkflowViewStateService.ViewState>

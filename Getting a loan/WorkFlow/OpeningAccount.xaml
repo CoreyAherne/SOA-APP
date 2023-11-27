@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>824,3691.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>824,3956.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>OpeningAccount_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
@@ -90,21 +90,22 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OpeningAccount" sap:VirtualizedContainerService.HintSize="774.4,3626.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpeningAccount" sap:VirtualizedContainerService.HintSize="774.4,3892" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="732.8,3533.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="732.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Opening SOA App via URL&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="732.8,3666.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: SOA Bank" sap:VirtualizedContainerService.HintSize="696,3302.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: SOA Bank" sap:VirtualizedContainerService.HintSize="696,3435.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="662.4,3085.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="662.4,3218.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -122,27 +123,27 @@
                   </uix:NClick.Target>
                 </uix:NClick>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="620.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reading Excel File&quot;]" />
-                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="620.8,2660.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="620.8,2793.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
                   <ueab:ExcelProcessScopeX.Body>
                     <ActivityAction x:TypeArguments="ui:IExcelProcess">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="587.2,2574.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="587.2,2707.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="545.6,2481.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="545.6,2614.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <TryCatch.Try>
-                            <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="508.8,2250.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="Account.xlsx">
+                            <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="508.8,2383.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="Account.xlsx">
                               <ueab:ExcelApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1980.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,2113.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -230,6 +231,7 @@
                                         </ActivityAction>
                                       </ueab:ExcelForEachRowX.Body>
                                     </ueab:ExcelForEachRowX>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Opening acount with details given&quot;]" />
                                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to open account" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V3">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="309, 963, 120, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' type='button' class='mat-focus-indicator mat-button mat-button-base' check:innerText='Open' /&gt;" Guid="2bcdcb36-8521-412a-95ad-10edb986233d" InformativeScreenshot="e3481791f759d57454be1e3c3bee01e8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
