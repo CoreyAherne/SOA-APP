@@ -8812,9 +8812,9 @@
     "restore": {
       "projectUniqueName": "Getting a loan",
       "projectName": "Getting a loan",
-      "projectPath": "C:\\Users\\Dell\\Documents\\UiPath\\Getting a loan\\.local",
+      "projectPath": "C:\\Users\\Dell\\Documents\\UiPath\\SOA APP Project\\SOA-APP\\Getting a loan\\.local",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\Documents\\UiPath\\Getting a loan\\.local"
+      "outputPath": "C:\\Users\\Dell\\Documents\\UiPath\\SOA APP Project\\SOA-APP\\Getting a loan\\.local"
     },
     "frameworks": {
       "net461": {

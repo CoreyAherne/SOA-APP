@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xVjuq9HSkhydFyUGQCTrQo/UHyGxYM19VFbrcJYSFB6mmxhkiTcL18U3ugZYqvD1AwD7DiqyWQB3VyDsuPCI1Q==",
+  "dgSpecHash": "8w6fhBAwMZZMFKdvkBSPMiubVD6ZpT6X3MG/NXbYKHH5Ci1h29bUlGd/EF3yOZPwHqgjRGVZ/Dqm8mBi0fR5oA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\Documents\\UiPath\\Getting a loan\\.local\\",
+  "projectFilePath": "C:\\Users\\Dell\\Documents\\UiPath\\SOA APP Project\\SOA-APP\\Getting a loan\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
