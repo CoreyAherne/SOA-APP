@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>727.2,3500</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>824,3691.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>OpeningAccount_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
@@ -52,7 +52,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="66">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -86,29 +86,31 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OpeningAccount" sap:VirtualizedContainerService.HintSize="737.6,3435.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpeningAccount" sap:VirtualizedContainerService.HintSize="774.4,3626.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="696,3342.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="732.8,3533.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: SOA Bank" sap:VirtualizedContainerService.HintSize="659.2,3111.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: SOA Bank" sap:VirtualizedContainerService.HintSize="696,3302.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,2854.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="662.4,3085.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to Open New Account" sap:VirtualizedContainerService.HintSize="584,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to Open New Account" sap:VirtualizedContainerService.HintSize="620.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V1">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="398, 441, 45, 24" ElementType="Text" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' type='' check:text='Open' /&gt;" Guid="d93b24a0-2f63-4d81-96b7-f3937bbd530c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAcCAYAAADIrlf0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM3SURBVFhH7Za/S+NgGMf9Ezp2dXTs6Nrxxhv7D4gIBQmF4+pyUES4IoKKS3GRdhC6HOemt4gOcrTDQTgQNK1N02pN/dG0WGm/97zJk+ZH7fW4Hl6QfiDD++RJ8n7e93mSzOANMJUIClOJoDCVCApTiaAwWsJo4+hLHUs7VT7q2Cq20enx+QDxgkQfha8VRBYvMbOoIJK4QmyjgqikILRwiZCkIqv1OTcYDEk0z6qYo8nOrd9C7nKQ6ai3iC2T3HIVBwYHA4BPooVUQkxSw9GospFrmCfJ6H6bAySu3CN7ZqCJHjRZR3qXyi93g4OfT5zhZ3zeBZ0/OBer2INcvP1trleifI0oTTCy1+LAS7SRXiHRlWvIHJH3y5iRqkhulxCOixIsISJ2jO41n7knORc9A+lPdqlSXkJBWDxz+86Tl9+knLUaUpQb8t8z98hZFl6Jk6qZtHTC4xGYD1ioIs9jU4Kum93QoQ12sIdCTsQVSEW7h/o43SuRQBlpxemr5rGKWbo+9u2ZI/YzaMdzLXQ4BnSR31AoXkHWVc4eCWsyZaQUDozAzkur7nEJSXtrbAzqISGXeeDAA6S4e2zTQlKiSdMi2FgS3smamAtNzy7zmPBINA8rlCBWjgMjOMqI1VCR51W3JJyxA5deqgFNDLlcZ1dU16tbHCqiJOcuUVPi4zUKPB4wTgJFzdrWQ2dbh3lG9jM9IE7NzxFLwikvB1//sMT8qlvAdeTuLFnClHBJDRgrYeiI0fchtK57m9GNnbN5x4Hh8nLwlUmjgfeizl1vtlH8vQQ1nlUqCjW37yNh0sPpLjWmWf9OY1oS3sY0GXod8yucJlcY8+WfQIIwHpD8QDdYLCGW03GqPkFrPEGm93ZqrWR+taP73m6zJUJSBelix8zXLnQsifvEqVfuOZFo0iTMj+lqHfkL695aw6BfnBq2fnASMZmEoNtGducKc+LXgx5oH+FEBclj54VnY/dE5nsNUdc14YSKrXP/kvehndXxTpSZ696hOE3snFOIySUG9NHRrdVqvlRdjLex+ZrHMfVCdB55J4zJ/sXGSPwZXonXZyph8yYkYIja7rr+cV6XfyPxXwF+AfbeOlfHr0L7AAAAAElFTkSuQmCC" InformativeScreenshot="59a4f7a8edbe9d15b7ca0be2f263232b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector, Image">
                       <uix:TargetAnchorable.Anchors>
@@ -119,128 +121,148 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="584,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reading Excel File&quot;]" />
-                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="584,2429.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="620.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reading Excel File&quot;]" />
+                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="620.8,2660.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
                   <ueab:ExcelProcessScopeX.Body>
                     <ActivityAction x:TypeArguments="ui:IExcelProcess">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,2343.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="587.2,2574.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="508.8,2250.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="Account.xlsx">
-                          <ueab:ExcelApplicationCard.Body>
-                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                              </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1980.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,1690.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
-                                  <ueab:ExcelForEachRowX.Body>
-                                    <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
-                                      <ActivityAction.Argument1>
-                                        <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
-                                      </ActivityAction.Argument1>
-                                      <ActivityAction.Argument2>
-                                        <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
-                                      </ActivityAction.Argument2>
-                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1497.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Writing Excel Acocunt details into Webpage&quot;]" />
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Name&quot;).ToString]" Version="V3">
-                                          <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="221, 526, 415, 44" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID6c7b3eede457437…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;mat-form-field&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-24 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="402e9a30-5e8d-4f5f-a06d-d5e92f1f5943" InformativeScreenshot="f15d8e7e637c8c87fdbb1fbf036a70d9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                              <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target DesignTimeRectangle="220, 491, 85, 24" ElementType="Text" FriendlyName="'Full Name'" FullSelectorArgument="&lt;webctrl aaname=' Full Name ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Full Name ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Full Name' /&gt;" SearchSteps="FuzzySelector" />
-                                                </scg:List>
-                                              </uix:TargetAnchorable.Anchors>
-                                            </uix:TargetAnchorable>
-                                          </uix:NTypeInto.Target>
-                                        </uix:NTypeInto>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Email" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V3">
-                                          <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="653, 536, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID6c344ee84b6e439…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-23 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="e22f8182-6369-4534-8fe4-9daac1bc4967" InformativeScreenshot="10b8a2a534b31208784893e7fe9ff17d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                              <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target DesignTimeRectangle="652, 491, 118, 24" ElementType="Text" FriendlyName="'Email Address'" FullSelectorArgument="&lt;webctrl aaname=' Email Address ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Email Address ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Email Address' /&gt;" SearchSteps="FuzzySelector" />
-                                                </scg:List>
-                                              </uix:TargetAnchorable.Anchors>
-                                            </uix:TargetAnchorable>
-                                          </uix:NTypeInto.Target>
-                                        </uix:NTypeInto>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Account Type" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;AccountType&quot;).ToString]" Version="V3">
-                                          <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="189, 833, 243, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;ng-select&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='' tag='INPUT' type='text' aaname='' /&gt;" Guid="eac0f7c6-34a5-4482-a6e5-8971cb165d97" InformativeScreenshot="b63a28bc1b2f24dd64b9fe4c412596f0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                              <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target DesignTimeRectangle="175, 788, 113, 24" ElementType="Text" FriendlyName="'Account Type'" FullSelectorArgument="&lt;webctrl aaname=' Account Type ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Account Type ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Account Type' /&gt;" SearchSteps="FuzzySelector" />
-                                                </scg:List>
-                                              </uix:TargetAnchorable.Anchors>
-                                            </uix:TargetAnchorable>
-                                          </uix:NTypeInto.Target>
-                                        </uix:NTypeInto>
-                                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="333.6,238.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
-                                          <uix:NMouseScroll.SearchedElement>
-                                            <uix:SearchedElement>
-                                              <uix:SearchedElement.Target>
-                                                <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="176, 864, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID5e70029fa5e64fa…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-21 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="ce362718-eed4-44b2-a750-568476b3c332" InformativeScreenshot="dbdef2cbf2dc49c4fd36cbdcfabb083d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="545.6,2481.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                          <TryCatch.Try>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="508.8,2250.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="Account.xlsx">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1980.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,1690.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                                      <ueab:ExcelForEachRowX.Body>
+                                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                          <ActivityAction.Argument1>
+                                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                          </ActivityAction.Argument1>
+                                          <ActivityAction.Argument2>
+                                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                          </ActivityAction.Argument2>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1497.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Writing Excel Acocunt details into Webpage&quot;]" />
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Name&quot;).ToString]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="221, 526, 415, 44" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID6c7b3eede457437…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;mat-form-field&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-24 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="402e9a30-5e8d-4f5f-a06d-d5e92f1f5943" InformativeScreenshot="f15d8e7e637c8c87fdbb1fbf036a70d9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="220, 491, 85, 24" ElementType="Text" FriendlyName="'Full Name'" FullSelectorArgument="&lt;webctrl aaname=' Full Name ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Full Name ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Full Name' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Email" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="653, 536, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID6c344ee84b6e439…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-23 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="e22f8182-6369-4534-8fe4-9daac1bc4967" InformativeScreenshot="10b8a2a534b31208784893e7fe9ff17d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="652, 491, 118, 24" ElementType="Text" FriendlyName="'Email Address'" FullSelectorArgument="&lt;webctrl aaname=' Email Address ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Email Address ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Email Address' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Account Type" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;AccountType&quot;).ToString]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="189, 833, 243, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;landing-page&amp;gt;app-host&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;form-basic-control-panel&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;ng-select&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='' tag='INPUT' type='text' aaname='' /&gt;" Guid="eac0f7c6-34a5-4482-a6e5-8971cb165d97" InformativeScreenshot="b63a28bc1b2f24dd64b9fe4c412596f0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="175, 788, 113, 24" ElementType="Text" FriendlyName="'Account Type'" FullSelectorArgument="&lt;webctrl aaname=' Account Type ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Account Type ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Account Type' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="333.6,238.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                              <uix:NMouseScroll.SearchedElement>
+                                                <uix:SearchedElement>
+                                                  <uix:SearchedElement.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="176, 864, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID5e70029fa5e64fa…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-21 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="ce362718-eed4-44b2-a750-568476b3c332" InformativeScreenshot="dbdef2cbf2dc49c4fd36cbdcfabb083d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="175, 819, 162, 24" ElementType="Text" FriendlyName="'Deposit Amount ($)'" FullSelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Deposit Amount ($)' /&gt;" SearchSteps="FuzzySelector" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:SearchedElement.Target>
+                                                  <uix:SearchedElement.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:SearchedElement.Timeout>
+                                                </uix:SearchedElement>
+                                              </uix:NMouseScroll.SearchedElement>
+                                            </uix:NMouseScroll>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Deposit" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Deposit&quot;).ToString]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="176, 864, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID5e70029fa5e64fa…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-21 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="55fc1074-101a-441b-ad6a-8aa7941d95af" InformativeScreenshot="a83fca8b58e5fd13517bd48092935dfb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
                                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                       <uix:Target DesignTimeRectangle="175, 819, 162, 24" ElementType="Text" FriendlyName="'Deposit Amount ($)'" FullSelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Deposit Amount ($)' /&gt;" SearchSteps="FuzzySelector" />
                                                     </scg:List>
                                                   </uix:TargetAnchorable.Anchors>
                                                 </uix:TargetAnchorable>
-                                              </uix:SearchedElement.Target>
-                                              <uix:SearchedElement.Timeout>
-                                                <InArgument x:TypeArguments="x:Double" />
-                                              </uix:SearchedElement.Timeout>
-                                            </uix:SearchedElement>
-                                          </uix:NMouseScroll.SearchedElement>
-                                        </uix:NMouseScroll>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Deposit" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Text="[CurrentRow(&quot;Deposit&quot;).ToString]" Version="V3">
-                                          <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="176, 864, 318, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ID5e70029fa5e64fa…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control input ng-tns-c75-21 cdk-text-field-autofill-monitored' aaname='' /&gt;" Guid="55fc1074-101a-441b-ad6a-8aa7941d95af" InformativeScreenshot="a83fca8b58e5fd13517bd48092935dfb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                              <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target DesignTimeRectangle="175, 819, 162, 24" ElementType="Text" FriendlyName="'Deposit Amount ($)'" FullSelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Deposit Amount ($) ' tag='SPAN' type='' class='control-label lable-top' check:innerText='Deposit Amount ($)' /&gt;" SearchSteps="FuzzySelector" />
-                                                </scg:List>
-                                              </uix:TargetAnchorable.Anchors>
-                                            </uix:TargetAnchorable>
-                                          </uix:NTypeInto.Target>
-                                        </uix:NTypeInto>
-                                      </Sequence>
-                                    </ActivityAction>
-                                  </ueab:ExcelForEachRowX.Body>
-                                </ueab:ExcelForEachRowX>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to open account" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V3">
-                                  <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="309, 963, 120, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' type='button' class='mat-focus-indicator mat-button mat-button-base' check:innerText='Open' /&gt;" Guid="2bcdcb36-8521-412a-95ad-10edb986233d" InformativeScreenshot="e3481791f759d57454be1e3c3bee01e8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                      <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target DesignTimeRectangle="346, 975, 45, 24" ElementType="Text" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' type='' class='' check:innerText='Open' /&gt;" SearchSteps="FuzzySelector" />
-                                        </scg:List>
-                                      </uix:TargetAnchorable.Anchors>
-                                    </uix:TargetAnchorable>
-                                  </uix:NClick.Target>
-                                </uix:NClick>
-                              </Sequence>
-                            </ActivityAction>
-                          </ueab:ExcelApplicationCard.Body>
-                        </ueab:ExcelApplicationCard>
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ueab:ExcelForEachRowX.Body>
+                                    </ueab:ExcelForEachRowX>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to open account" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="529690e3-02a6-4d4c-8fd4-2c665f3d50d0" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/schoopdzgyqh/apps_/default/run/production/b46a523e-5156-4903-b0b1-0e1c50d3ccba/1a05770d-25d2-4768-b0c1-c041e7124ef3/ID85c5b50a99324527a302987784d4b483?el=VB&amp;origin=appsHomePage" DesignTimeRectangle="309, 963, 120, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='BUTTON' type='button' class='mat-focus-indicator mat-button mat-button-base' check:innerText='Open' /&gt;" Guid="2bcdcb36-8521-412a-95ad-10edb986233d" InformativeScreenshot="e3481791f759d57454be1e3c3bee01e8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SOA Bank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="346, 975, 45, 24" ElementType="Text" FriendlyName="'Open'" FullSelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Open' tag='SPAN' type='' class='' check:innerText='Open' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="512,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Fatal" Message="[&quot;Failed to read data from excel file, please check if the file exists or if the file contains data&quot;]" />
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                        </TryCatch>
                       </Sequence>
                     </ActivityAction>
                   </ueab:ExcelProcessScopeX.Body>
@@ -254,7 +276,7 @@
         </uix:NApplicationCard>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="662.4,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="699.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
